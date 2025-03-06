@@ -97,4 +97,4 @@ The application automatically deploys to Google Cloud Run via GitHub Actions whe
 MIT © Travel Agency Bot
 
 ---
-Built with LangChain and OpenAI for the modern traveler 
+Built with LangChain and LLM for the modern traveler 
