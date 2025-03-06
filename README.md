@@ -1,11 +1,11 @@
-# Travel Agency Bot
+# Travel Agency Bot 🌴
 
 > An intelligent Telegram bot powered by LangChain and GPT-4o-mini that helps plan personalized Bali vacations. From accommodation recommendations to cultural insights, make your Bali trip planning seamless and informed.
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Overview
+## Overview 🎯
 
 A smart travel assistant that combines AI capabilities with real-time travel data to provide:
 - Natural conversation flow with context memory
@@ -21,7 +21,7 @@ A smart travel assistant that combines AI capabilities with real-time travel dat
 - **Nusa Dua**: Family-friendly beaches
 - **Canggu**: Digital nomad hub and surf spots
 
-## Quick Start
+## Quick Start ⚡
 
 ### Prerequisites
 ```bash
@@ -45,7 +45,7 @@ cp .env.example .env
 python bot.py
 ```
 
-## Technical Architecture
+## Technical Architecture 🔧
 
 ### Core Components
 ```mermaid
@@ -71,7 +71,7 @@ graph TD
 - **Cloud**: Google Cloud Platform (e2-micro)
 - **Deployment**: Cloud Run with auto-scaling
 
-## Development
+## Development 🚀
 
 ### Local Environment
 ```bash
