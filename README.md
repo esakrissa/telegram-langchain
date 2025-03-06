@@ -1,4 +1,4 @@
-# Bali Travel Planner Bot
+# Travel Agency Bot using LangChain
 
 > An intelligent Telegram bot powered by LangChain and GPT-4o-mini that helps plan personalized Bali vacations. From accommodation recommendations to cultural insights, make your Bali trip planning seamless and informed.
 
