@@ -1,6 +1,6 @@
 # Travel Agency Telegram Bot
 
-A Telegram bot that helps users plan their vacations by providing information about destinations, accommodations, flights, and activities. The bot uses LangChain with OpenAI's GPT-4o-mini model to generate responses.
+A Telegram bot that helps users plan their vacations by providing information about destinations, accommodations, flights, and activities in Bali. The bot uses LangChain with OpenAI's GPT-4o-mini model to generate responses.
 
 ## Features
 
@@ -13,7 +13,7 @@ A Telegram bot that helps users plan their vacations by providing information ab
 
 ## Prerequisites
 
-- Python 3.8+
+- Python 3.10+
 - Telegram Bot Token (from BotFather)
 - OpenAI API Key
 
@@ -49,36 +49,39 @@ python bot.py
 
 4. Follow the conversation flow to plan your vacation.
 
-## Conversation Flow
+## Core Features (Future Implementation)
 
-The bot follows a structured conversation flow:
+### 1. Initial Contact and Preference Gathering
+The bot initiates the conversation by asking about travel dates, party size, destination preferences, and budget. Based on this information, it recommends suitable destinations in Bali such as Ubud (cultural heart), Seminyak/Kuta (beach resorts), and Uluwatu (clifftop luxury).
 
-1. **Initial Contact**: User expresses interest in planning a vacation
-2. **Preference Gathering**: Bot asks about dates, party size, preferences, and budget
-3. **Destination Recommendations**: Bot suggests suitable destinations
-4. **Destination Details**: User can ask for more information about specific destinations
-5. **Resort Selection**: Bot provides resort options based on the selected destination
-6. **Flight Options**: Bot provides flight information
-7. **Activity Suggestions**: Bot suggests activities at the destination
-8. **Booking Support**: Bot assists with the booking process
+### 2. Dynamic Knowledge Retrieval
+When users ask about specific destinations, the bot provides detailed information about:
+- Safety considerations for families
+- Family-friendly activities (e.g., Sacred Monkey Forest in Ubud, Waterbom Park in Kuta)
+- Weather conditions during the travel period
+- Travel requirements (passports, visas, etc.)
 
-## Example Conversation
+### 3. Multi-Turn Conversation with Memory
+The bot remembers previous interactions, allowing for natural conversation flow. For example, if a user asks about safety in Ubud and then requests resort recommendations, the bot recalls the context and provides relevant family-friendly resort options with pricing details.
 
-```
-User: Hi, I'm looking to plan a beach vacation next month
-Bot: Hello! I'd be happy to help you plan your beach vacation. To get started:
-* When exactly are you planning to travel next month?
-* How many people will be traveling?
-* Do you have any specific beach destinations in mind?
-* What's your approximate budget range for this trip?
+### 4. Integration with External Tools
+The bot can simulate checking flight options from the user's location to Bali, providing:
+- Flight options with airlines, prices, and schedules
+- Total cost calculations combining flights and accommodation
+- Budget comparison and alternatives if the total exceeds the user's budget
 
-User: We're thinking June 15-22, 2 adults and 1 child. Somewhere warm with clear water. Budget around $3000 total.
-Bot: Thanks for sharing those details! Based on your dates (June 15-22), party size (2 adults, 1 child), and $3000 budget, here are some warm destinations with clear waters that would work well:
-1. Cancun, Mexico - Family-friendly resorts, beautiful Caribbean beaches
-2. Punta Cana, Dominican Republic - All-inclusive options within your budget
-3. Gulf Coast, Florida - Domestic option with less travel time
-Would you like more information about any of these destinations? Or do you have other preferences I should consider?
-```
+### 5. Advanced Planning and Problem Solving
+If the initial options exceed the user's budget, the bot can suggest:
+- Alternative accommodations at different price points
+- Different travel dates for better pricing
+- Budget-friendly activities and transportation options
+
+### 6. Detailed Itinerary and Booking Support
+The bot provides comprehensive information about activities near the chosen resort:
+- Walking-distance attractions
+- Short-drive excursions (e.g., Tegallalang Rice Terraces from Ubud)
+- Worth-the-drive destinations (e.g., Bali Safari Park)
+- Transportation options with approximate costs
 
 ## License
 
